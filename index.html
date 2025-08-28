@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Usuários</title>
+    <link rel="icon" type="image/x-icon" href="topIcon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form id="myForm" action="">
+      <h1>Cadastro de Usuários</h1>
+      <p>Preencha todos os campos obrigatórios com informações válidas.</p>
+      <div>
+        <div class="nome">
+          <label for="nome">Nome:* </label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="EX: João da Silva"
+          />
+        </div>
+        <div>
+          <label for="cpf">CPF:* </label>
+          <input
+            type="text"
+            id="cpf"
+            name="cpf"
+            maxlength="14"
+            placeholder="EX: 123.456.789-00"
+          />
+        </div>
+        <div>
+          <label for="login">Login:* </label>
+          <input
+            type="text"
+            id="login"
+            name="login"
+            placeholder="EX: joaodasilva"
+          />
+        </div>
+        <div>
+          <label for="email">Email:* </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="exemplo@exemplo.com"
+        />
+      </div>
+      <div class="input-wrapper">
+        <label for="password">Senha:* </label>
+        <div class="input-with-icon">
+          <input type="password" id="password" name="password" placeholder="" />
+          <img src="eye.png" alt="Mostrar senha" class="eye-icon" id="togglePassword">
+        </div>
+      </div>
+      <div>
+        <label for="confirmPassword">Confirmar Senha:* </label>
+        <div class="input-with-icon">
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder=""
+          />
+          <img src="eye.png" alt="Mostrar senha" class="eye-icon" id="togglePassword">
+        </div>
+      </div>
+      <div>
+        <label for="salario">Salário:* </label>
+        <input
+          type="number"
+          id="salario"
+          name="salario"
+          placeholder="EX: 3000"
+        />
+      </div>
+      <div>
+        <label for="numeroDependentes">Número de Dependentes:* </label>
+        <input
+          type="number"
+          id="numeroDependentes"
+            name="numeroDependentes"
+          placeholder="EX: 2"
+        />
+        </div>
+        <div>
+          <label for="impostoRenda">Imposto de Renda:* </label>
+          <input
+            type="text"
+            id="impostoRenda"
+            name="impostoRenda"
+          placeholder="EX: 15%"
+          readonly
+        />
+        </div>
+        <button type="submit" class="btn-cadastrar">Cadastrar</button>
+        <button type="button" class="btn-limpar">Limpar</button>
+      </div>
+    </form>
+
+    <div id="errors" style="color: red"></div>
+  </body>
+</html>

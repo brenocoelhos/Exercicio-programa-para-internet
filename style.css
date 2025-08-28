@@ -1,0 +1,161 @@
+body {
+    background: #eef2ff;
+}
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px 32px;
+    background: #f9f9fb;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #4f46e5;
+    outline: none;
+}
+
+form button,
+form input[type="submit"] {
+    background: #6cd179;
+    color: #fff;
+    border: none;
+    margin-left: 12px;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-cadastrar {
+    background: #4f46e5;
+}
+
+.btn-cadastrar:hover {
+    background: #4338ca;
+}
+
+.btn-limpar {
+    background: #d1d5db;
+    color: #333;
+}
+
+.btn-limpar:hover {
+    background: #cbd5e1;
+}
+.error-message {
+    color: #e02424;
+    font-size: 14px;
+    margin-top: -12px;
+    margin-bottom: 12px;
+}
+
+.toast-large {
+    font-size: 18px !important;
+    padding: 25px 30px !important;
+    min-width: 350px !important;
+    max-width: 500px !important;
+    border-radius: 10px !important;
+    font-weight: 500 !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2) !important;
+    line-height: 1.4 !important;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    min-height: 16px;
+    font-weight: 500;
+    display: block;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper input[type="password"] {
+  padding-right: 36px;
+}
+
+.input-wrapper .eye-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Novo container para inputs com ícone */
+.input-with-icon {
+    position: relative;
+}
+.input-with-icon input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 42px; /* espaço para o ícone */
+}
+.input-with-icon .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding-right: 40px; /* espaço para o ícone */
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 16px;
+}
+
+.input-with-icon .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
