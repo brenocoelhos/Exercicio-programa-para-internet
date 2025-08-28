@@ -141,11 +141,9 @@ form input[type="submit"] {
 }
 
 .input-with-icon input {
-    width: 100%;
+    width: 95%;
     padding-right: 40px; /* espaço para o ícone */
-    border: 1px solid var(--border);
     border-radius: 6px;
-    background: var(--card);
     color: var(--text);
     font-size: 16px;
 }
@@ -158,4 +156,6 @@ form input[type="submit"] {
     width: 24px;
     height: 24px;
     cursor: pointer;
+    margin-top: -10px;
+    margin-right: -14px;
 }

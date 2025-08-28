@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     cpf: document.getElementById("cpf"),
     login: document.getElementById("login"),
     email: document.getElementById("email"),
-    password: document.getElementById("password"),
-    confirmPassword: document.getElementById("confirmPassword"),
+    password: document.getElementById("senha"),
+    confirmPassword: document.getElementById("senha"),
     salario: document.getElementById("salario"),
     numeroDependentes: document.getElementById("numeroDependentes"),
     impostoRenda: document.getElementById("impostoRenda"),
@@ -149,11 +149,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const togglePassword = document.getElementById('togglePassword');
-const password = document.getElementById('password');
+const password = document.getElementById('senha');
 
 togglePassword.addEventListener('click', () => {
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
     password.setAttribute('type', type);
     // opcional: trocar a imagem do olho
-    togglePassword.src = type === 'password' ? 'olho.png' : 'olho-aberto.png';
+    togglePassword.src = type === 'password' ? 'eye.png' : 'eye.png';
 });
